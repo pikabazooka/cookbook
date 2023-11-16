@@ -6,6 +6,10 @@ features
 - ingrediants - non/optional
 - heatmap temp coours when edits made - ie visibly see edit history/changes to recipe
 - variations of same recipe, reccipe tree? categories -> sub cat -> sub cat etc
+- tags
+- strikethrough ingrediensts
+- crop img ? - preset xy
+- make the background shits the same size 
+- better spacing
+- not kms
 
-learned 
-- how to create and link a repository 

@@ -3,35 +3,73 @@
     <head>
         <meta charset="UTF-8">
         <title>spring roll bowl</title>
+        <link rel="stylesheet" href="../style.css">
     </head>
     <body>
+
+        <div id="intro">
         <h1>spring roll bowl</h1>
-        <h5>oct 19 2023</h5>
-        <p>rating : 8/10</p>
-        <img src="./pics/spring-bowl.jpg" alt="desc" height="500">
+        <p>oct 19 2023 <b>|</b> rating : 8/10 <b>|</b> chef: emi :)</p>
+        <!-- description here tbh -->
+        </div>
 
-        <h3>ingredients</h3>
-        <h5>makes ?? portions</h5>
-        <ul>
-            <li>[some] (type of) noodle</li>
-            <li>[some] shrimp</li>
-            <li>[some] apple</li>
-            <li>[some] cucumber</li>
-            <li>[some] oyster sauce, salt, pepper</li>
-            <li>[1:1:1:2] (sauce 1) fish sauce, sugar, vinegar, water</li>
-            <li>[1:1:1:1] (sauce 2) hoisin sauce, peanut butter, sugar, vinegar</li>
-        </ul>
+        <div>
+            <p></p>
+        </div> <!-- i feel like i am using div too much ?-->
 
-        <h3>steps</h3>
-        <ol>
-            <li>boil noodle</li>
-            <li>mix egg with salt/pepper/fish sauce</li>
-            <li>cook egg</li>
-            <li>peel shrimp</li>
-            <li>cook shrimp with oyster sauce</li>
-            <li>chop apple and cucumber</li>
-            <li>mix sauce of choice</li>
-            <li>yum</li>
-        </ol>
+        <div class="huh">
+            <div id="left">
+                <div id="main-img"></div>
+                <img src="./pics/spring-bowl.jpg" alt="fresh spring roll bowl" height="500" width="375">
+                <div id="notes">
+                    <h3 class="tab">notes</h3>
+                        <p class="tab">do this and that for extra yum</p>
+                </div>
+            </div>
+
+            <div id="right">
+                <div id="ingredients">
+                    <h3 class="tab">ingredients</h3>
+                    <h5>makes ?? portions</h5>
+                    <ul>
+                        <li>[some] (type of) noodle</li>
+                        <li>[some] shrimp</li>
+                        <li>[some] apple</li>
+                        <li>[some] cucumber</li>
+                        <li>[some] oyster sauce, salt, pepper</li>
+                        <li>[1:1:1:2] (sauce 1) fish sauce, sugar, vinegar, water</li>
+                        <li>[1:1:1:1] (sauce 2) hoisin sauce, peanut butter, sugar, vinegar</li>
+                    </ul>
+                    <script> /* https://www.w3schools.com/howto/howto_js_todolist.asp */
+                        // Add a "checked" symbol when clicking on a list item
+                        // only works on one ul ????
+                        var list = document.querySelector('ul');
+                        list.addEventListener('click', function(ev) {
+                        if (ev.target.tagName === 'LI') {
+                            ev.target.classList.toggle('checked');
+                        }
+                        }, false);
+                        
+                    </script>
+                    
+                </div>
+            
+
+            
+                <div id="steps">
+                    <h3 class="tab">steps</h3>
+                    <ol>
+                        <li>boil noodle</li>
+                        <li>mix egg with salt/pepper/fish sauce</li>
+                        <li>cook egg</li>
+                        <li>peel shrimp</li>
+                        <li>cook shrimp with oyster sauce</li>
+                        <li>chop apple and cucumber</li>
+                        <li>mix sauce of choice</li>
+                        <li>yum</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

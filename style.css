@@ -1,0 +1,80 @@
+body {
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #FCFBF2;
+    margin-left: 5% ;
+}
+
+#intro {
+    background-color: #ECE4B7;
+    display: inline-block;
+    width: 90%;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.huh {
+    display: flex;
+    gap: 40px;
+    flex-direction: row;
+    align-items: flex-end;
+    
+}
+
+.tab {
+    margin-left: 18px
+}
+
+
+
+#main-img, img {
+    border-radius: 25px;
+    object-fit: cover;
+
+}
+
+#ingredients, #steps, #notes { 
+    display: inline-block;
+    text-align: left;
+    vertical-align: top;
+    height: 500px;
+
+    width: 100%;
+    margin-right: 5%;
+    background: linear-gradient(#ECE4B7 10%, #F6F2DB 10%);
+    border-radius: 25px;
+}
+
+h5, h3 {
+    display: inline-block;
+    
+}
+ul li:hover {
+    text-decoration: line-through;
+    font-weight: 550;
+    cursor: pointer
+}
+ul li.checked {
+    text-decoration: line-through;
+}
+
+ol {
+    padding-left: 53px;
+}
+
+#left {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: left;
+    width: 40%;
+    text-align: center;
+}
+
+#right {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    width: 55%;
+    text-align: center;
+}
