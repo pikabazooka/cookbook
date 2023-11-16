@@ -1,80 +1,61 @@
 body {
     font-family: 'Courier New', Courier, monospace;
-    background-color: #FCFBF2;
-    margin-left: 5% ;
+    background-color: #EDF2FB;
+    margin: 3% 5%;
+    color: #0D1B2A;
 }
 
-#intro {
-    background-color: #ECE4B7;
-    display: inline-block;
-    width: 90%;
-    border-radius: 25px;
-    text-align: center;
-}
-
-.huh {
+/* flexbox */
+.main-setup {
     display: flex;
-    gap: 40px;
-    flex-direction: row;
-    align-items: flex-end;
-    
+    gap: 50px;
+    flex-direction: column;
+}
+.row {
+    display: flex;
+    gap: 30px;
 }
 
-.tab {
-    margin-left: 18px
+/* alignment  */ /* use padding ? */
+h3, #notes p {
+    margin-left: 20px;
+}
+h3, #ingredients ul, #notes p, #steps ol {
+    margin-right: 20px;
 }
 
-
-
-#main-img, img {
+/* items */
+#intro, #main-img, #main-img img, #ingredients, #steps, #notes {
     border-radius: 25px;
-    object-fit: cover;
-
+    width: 100%
 }
-
-#ingredients, #steps, #notes { 
-    display: inline-block;
-    text-align: left;
-    vertical-align: top;
+#intro {
+    background-color: #D2DFFD;
+    text-align: center
+}
+#main-img, #ingredients, #steps, #notes { 
+    background: linear-gradient(#D2DFFD 10%, #DDE7FC 10%);
     height: 500px;
-
-    width: 100%;
-    margin-right: 5%;
-    background: linear-gradient(#ECE4B7 10%, #F6F2DB 10%);
-    border-radius: 25px;
+}
+#main-img img {
+    object-fit: cover
+}
+#main-img, #notes {
+    width: 375px;
+    flex: 0 0 375px
+}
+#ingredients h5, #ingredients h3 {
+    display: inline-block
 }
 
-h5, h3 {
-    display: inline-block;
-    
-}
+/* ingredients strikethrough */
 ul li:hover {
-    text-decoration: line-through;
     font-weight: 550;
     cursor: pointer
 }
-ul li.checked {
-    text-decoration: line-through;
+ul li:hover, ul li.checked {
+    text-decoration: line-through
 }
-
 ol {
-    padding-left: 53px;
-}
-
-#left {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: left;
-    width: 40%;
-    text-align: center;
-}
-
-#right {
-    display: flex;
-    flex-direction: column;
-    gap: 40px;
-    align-items: center;
-    width: 55%;
-    text-align: center;
+    padding-left: 53px
 }

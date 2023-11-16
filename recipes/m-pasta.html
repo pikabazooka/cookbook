@@ -2,42 +2,77 @@
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>cream o mushroom pasta</title>
+        <title>cream o mushroom pasta</title> 
         <link rel="stylesheet" href="../style.css">
     </head>
-    <body>
-        <h1>cream o mushroom pasta</h1>
-        <h5>nov 08 2023</h5>
-        <p>rating : 7/10</p>
-        <img src="./pics/m-pasta.jpg" alt="pasta" height="500">
 
-        <h3>ingredients</h3>
-        <h5>makes 5 portions</h5>
-        <ul>
-            <li>[alot] pasta</li>
-            <li>[some] garlic</li>
-            <li>[some] onion</li>
-            <li>[some] frozen corn</li>
-            <li>[some] ground beef</li>
-            <li>[one can] cream of mushroom</li>
-            <li>[to taste] salt, pepper, sugar, ginger powder</li>
-        </ul>
-        
-        <h3>steps</h3>
-        <ol>
-            <li>mix shit tgt</li>
-            <li>yum</li>
-            <li>jk</li>
-            <li>boil pasta</li>
-            <li>sautee garlic and onion</li>
-            <li>add in beef</li>
-            <li>season</li>
-            <li>drain oil</li>
-            <li>add can of soup</li>
-            <li>add corn</li>
-            <li>stir around until it looks good</li>
-            <li>mix in noodles</li>
-            <li>yum</li>
-        </ol>
+    <body>
+        <div class="main-setup">
+            <div class="row">
+                <div id="intro">
+                    <h1>cream o mushroom pasta</h1> 
+                    <p>nov 08 2023 <b>|</b> rating: 7/10 <b>|</b> chef: emi :)</p> 
+                </div>
+            </div>
+            
+            <div class="row">
+                <div id="main-img">
+                    <img src="./pics/m-pasta.jpg" alt="mushroom sause pasta w beef" height="500" width="375"> 
+                </div>
+                
+                <div id="ingredients">
+                    <h3>ingredients</h3>
+                    <h5>makes 5 portions</h5> 
+                    <ul> 
+                        <li>[alot] pasta</li>
+                        <li>[some] garlic</li>
+                        <li>[some] onion</li>
+                        <li>[some] frozen corn</li>
+                        <li>[some] ground beef</li>
+                        <li>[one can] cream of mushroom</li>
+                        <li>[to taste] salt, pepper, sugar, ginger powder</li>
+                    </ul>
+                    <script> 
+                        var list = document.querySelector('ul');
+                        list.addEventListener('click', function(ev) {
+                            if (ev.target.tagName === 'LI') {
+                                ev.target.classList.toggle('checked');
+                            }
+                        }, false);
+                    </script>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div id="notes">
+                    <h3>notes</h3>
+                        <p>i didnt drain out the beef oil and shi was so greasy</p>
+                        <pre>
+
+
+
+                            ／l、
+                          （ﾟ､ ｡ ７         
+                            l  ~ヽ       
+                            じしf_,)ノ</pre>
+                </div>
+
+                <div id="steps">
+                    <h3>steps</h3>
+                    <ol>
+                        <li>boil pasta</li>
+                        <li>sautee garlic and onion</li>
+                        <li>add in beef</li>
+                        <li>season</li>
+                        <li>drain oil</li>
+                        <li>add can of soup</li>
+                        <li>add corn</li>
+                        <li>stir around until it looks good</li>
+                        <li>mix in noodles</li>
+                        <li>yum</li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

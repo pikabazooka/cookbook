@@ -1,60 +1,72 @@
-<!--  
 <!DOCTYPE html>
 <html lang="en">
     <head>
         <meta charset="UTF-8">
-        <title>title</title>
+        <title>title</title>  <!-- meow -->
         <link rel="stylesheet" href="../style.css">
     </head>
+
     <body>
-        <h1>title</h1>
-        <h5>mon 00 2023</h5>
-        <p>rating : 0/10</p>
-        <img src="./pics/title.jpg" alt="desc" height="500">
+        <div class="main-setup">
+            <div class="row">
+                <div id="intro">
+                    <h1>title</h1>  <!-- meow -->
+                    <p>abc 00 2023 <b>|</b> rating: ?/10 <b>|</b> chef: emi :)</p>  <!-- meow -->
+                    <!-- description here ? -->
+                </div>
+            </div>
+            
+            <div class="row">
+                <div id="main-img">
+                    <img src="./pics/title.jpg" alt="desc" height="500" width="375">  <!-- meow -->
+                </div>
+                
+                <div id="ingredients">
+                    <h3>ingredients</h3>
+                    <h5>makes ?? portions</h5>  <!-- meow -->
+                    <ul>  <!-- meow -->
+                        <li>[quant] item</li>
+                        <li>[quant] item</li>
+                        <li>[quant] item</li>
+                        <li>[quant] item</li>
+                        <li>[quant] item</li>
+                    </ul>
+                    <script> 
+                        var list = document.querySelector('ul');
+                        list.addEventListener('click', function(ev) {
+                            if (ev.target.tagName === 'LI') {
+                                ev.target.classList.toggle('checked');
+                            }
+                        }, false);
+                    </script>
+                </div>
+            </div>
+    
+            <div class="row">
+                <div id="notes">
+                    <h3>notes</h3>
+                        <p>do this and that for extra yum.</p>  <!-- meow -->
+                        <pre>
 
-        <h3>ingredients</h3>
-        <h5>makes x portions</h5>
-        <ul>
-            <li>[quant] item</li>
-        </ul>
-        
-        <h3>steps</h3>
-        <ol>
-            <li>mix shit tgt</li>
-            <li>yum</li>
-        </ol>
-    </body>
-</html>
-
--->
 
 
- 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <title>title</title>
-        <style>
-            ul {
-                display: table;
-                width: 100%;
-                table-layout: fixed; /* optional, for equal spacing */
-                border-collapse: collapse;
-            }
-            li {
-                display: table-cell;
-                text-align: center;
-                vertical-align: middle; /* or similar, if needed */
-            }
-        </style>
-    </head>
-    <body>
-        <ul>
-            <li>foo</li>
-            <li>bar</li>
-            <li>baz</li>
-        </ul>
+                            ／l、
+                          （ﾟ､ ｡ ７         
+                            l  ~ヽ       
+                            じしf_,)ノ</pre>
+                </div>
 
+                <div id="steps">
+                    <h3>steps</h3>
+                    <ol>  <!-- meow -->
+                        <li>mix shit tgt</li>
+                        <li>yum</li>
+                        <li></li>
+                        <li></li>
+                        <li></li>
+                    </ol>
+                </div>
+            </div>
+        </div>
     </body>
 </html>

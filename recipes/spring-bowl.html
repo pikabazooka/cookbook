@@ -5,31 +5,23 @@
         <title>spring roll bowl</title>
         <link rel="stylesheet" href="../style.css">
     </head>
+
     <body>
-
-        <div id="intro">
-        <h1>spring roll bowl</h1>
-        <p>oct 19 2023 <b>|</b> rating : 8/10 <b>|</b> chef: emi :)</p>
-        <!-- description here tbh -->
-        </div>
-
-        <div>
-            <p></p>
-        </div> <!-- i feel like i am using div too much ?-->
-
-        <div class="huh">
-            <div id="left">
-                <div id="main-img"></div>
-                <img src="./pics/spring-bowl.jpg" alt="fresh spring roll bowl" height="500" width="375">
-                <div id="notes">
-                    <h3 class="tab">notes</h3>
-                        <p class="tab">do this and that for extra yum</p>
+        <div class="main-setup">
+            <div class="row">
+                <div id="intro">
+                    <h1>spring roll bowl</h1>
+                    <p>oct 19 2023 <b>|</b> rating: 8/10 <b>|</b> chef: emi :)</p>
                 </div>
             </div>
-
-            <div id="right">
+            
+            <div class="row">
+                <div id="main-img">
+                    <img src="./pics/spring-bowl.jpg" alt="fresh spring roll bowl" height="500" width="375">
+                </div>
+                
                 <div id="ingredients">
-                    <h3 class="tab">ingredients</h3>
+                    <h3>ingredients</h3>
                     <h5>makes ?? portions</h5>
                     <ul>
                         <li>[some] (type of) noodle</li>
@@ -40,24 +32,25 @@
                         <li>[1:1:1:2] (sauce 1) fish sauce, sugar, vinegar, water</li>
                         <li>[1:1:1:1] (sauce 2) hoisin sauce, peanut butter, sugar, vinegar</li>
                     </ul>
-                    <script> /* https://www.w3schools.com/howto/howto_js_todolist.asp */
-                        // Add a "checked" symbol when clicking on a list item
-                        // only works on one ul ????
+                    <script>
                         var list = document.querySelector('ul');
                         list.addEventListener('click', function(ev) {
                         if (ev.target.tagName === 'LI') {
                             ev.target.classList.toggle('checked');
                         }
                         }, false);
-                        
                     </script>
-                    
                 </div>
-            
+            </div>
+    
+            <div class="row">
+                <div id="notes">
+                    <h3>notes</h3>
+                        <p>do this and that for extra yum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                </div>
 
-            
                 <div id="steps">
-                    <h3 class="tab">steps</h3>
+                    <h3>steps</h3>
                     <ol>
                         <li>boil noodle</li>
                         <li>mix egg with salt/pepper/fish sauce</li>
@@ -67,6 +60,7 @@
                         <li>chop apple and cucumber</li>
                         <li>mix sauce of choice</li>
                         <li>yum</li>
+                        <li>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</li>
                     </ol>
                 </div>
             </div>
